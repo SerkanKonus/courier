@@ -63,7 +63,6 @@ Uygulama `http://localhost:8080` adresinde çalışır.
 - **Metod**: `POST`
 - **İçerik Tipi**: `application/json`
 
-
 #### İstek Gövdesi:
 ```
 {
@@ -132,7 +131,6 @@ src
                 └── TestConstants.java
 ```
 
-
 ## 🧪 Test Kapsamı
 
 Uygulama aşağıdaki test senaryolarını içerir:
@@ -149,3 +147,16 @@ Uygulama aşağıdaki test senaryolarını içerir:
 - 💾 Mağaza giriş kayıtları in-memory veritabanında tutulmaktadır
 - ⏰ Mükerrer giriş kontrolü için 1 dakikalık süre kısıtı uygulanmaktadır
 - 📍 Mağaza yakınlık tespiti 100 metre yarıçap içinde yapılmaktadır
+
+## 🎨 Kullanılan Design Pattern'ler
+
+### Creational Patterns
+- 🏭 **Singleton Pattern**: Spring framework'ün sağladığı default davranış ile @Service ve @Repository annotasyonlu sınıflar (LocationTrackingService, StoreService, CourierEntryRepository, StoreRepository) singleton olarak yönetilmektedir.
+
+### Structural Patterns
+- 🔄 **DTO Pattern**: CourierEntryResponse sınıfı ile domain modellerinin (CourierEntry) API response'larına dönüştürülmesinde kullanılmıştır.
+- 🎯 **Repository Pattern**: CourierEntryRepository ve StoreRepository ile veri erişim katmanının soyutlanması sağlanmıştır.
+
+### Architectural Patterns
+- 📱 **MVC Pattern**: Controller-Service-Repository katmanları ile uygulama sorumlulukları ayrılmıştır.
+- 🔲 **Layered Architecture**: Presentation (Controller), Business (Service) ve Data (Repository) katmanları ile uygulama modüler bir yapıda tasarlanmıştır.
