@@ -27,22 +27,42 @@ Projeyi daha kolay çalıştırmak için `run.sh` script'ini kullanabilirsiniz:
 - `./run.sh test-location` # Konum servis testlerini çalıştır
 - `./run.sh test-store`   # Mağaza servis testlerini çalıştır
 
-## 🔧 Gereksinimler
+## 🛠 Teknolojiler & Araçlar
 
-- Java 21
-- Maven 3.6 veya üzeri
+### Ana Teknolojiler
+- ![Java](https://img.shields.io/badge/Java-21-orange)
+- ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-brightgreen)
+- ![H2 Database](https://img.shields.io/badge/H2%20Database-2.x-blue)
+- ![Maven](https://img.shields.io/badge/Maven-3.x-red)
+
+### Yardımcı Kütüphaneler
+- ![Lombok](https://img.shields.io/badge/Lombok-1.18.x-red) - Kod tekrarını azaltmak için
+- ![Swagger](https://img.shields.io/badge/Swagger-3.x-green) - API dokümantasyonu için
+- ![Spring Boot Test](https://img.shields.io/badge/Spring%20Boot%20Test-3.x-brightgreen) - Test framework'ü
+- ![AssertJ](https://img.shields.io/badge/AssertJ-3.x-yellow) - Test assertions için
+
+## 🔍 Özellikler
+- In-memory H2 veritabanı kullanımı
+- Exception handling:
+  - Global exception handler ile merkezi hata yönetimi
+  - Özel exception sınıfları (CourierNotFoundException, DuplicateStoreEntryException, StoreNotFoundException)
+- Swagger UI ile API dokümantasyonu (/swagger-ui.html)
+- Spring Boot Test ve AssertJ ile servis katmanı testleri
 
 ## 🚀 Kurulum ve Çalıştırma
 
 1. Projeyi klonlayın:
-- `bash`
-- `git clone https://github.com/SerkanKonus/courier.git`
-- `cd courier`
+```bash
+git clone https://github.com/SerkanKonus/courier.git
+cd courier
+```
 
 2. Maven ile derleyin ve çalıştırın:
-- `bash`
-- `mvn clean install`
-- `mvn spring-boot:run`
+
+```bash
+mvn clean install
+mvn spring-boot:run
+```
 
 ## 📚 API Dokümantasyonu
 
