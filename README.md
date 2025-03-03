@@ -113,13 +113,24 @@ src
 │   │       │   └── StoreService.java
 │   │       ├── repository
 │   │       │   ├── CourierEntryRepository.java
+│   │       │   ├── CourierLocationRepository.java
 │   │       │   └── StoreRepository.java
 │   │       ├── model
+│   │       │   ├── base
+│   │       │   │   └── BaseEntity.java
 │   │       │   ├── CourierLocation.java
 │   │       │   ├── Store.java
 │   │       │   └── CourierEntry.java
-│   │       └── dto
-│   │           └── CourierEntryResponse.java
+│   │       ├── dto
+│   │       │   └── CourierEntryResponse.java
+│   │       ├── exception
+│   │       │   ├── LocationTrackingException.java
+│   │       │   ├── StoreEntryException.java
+│   │       │   └── StoreInitializationException.java
+│   │       ├── util
+│   │       │    └── DistanceCalculator.java
+│   │       └── config
+│   │           └── SwaggerConfig.java
 │   └── resources
 │       └── application.yml
 └── test
