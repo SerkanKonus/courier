@@ -110,14 +110,14 @@ Uygulama `http://localhost:8080` adresinde çalışır.
 ## 🧪 Test Etme
 
 ### Tüm Testleri Çalıştırma
-- `bash`
-- `mvn test`
-
+```bash
+mvn test
+```
 ### Belirli Test Sınıflarını Çalıştırma
-- `bash`
-- `mvn test -Dtest=LocationTrackingServiceTest`
-- `mvn test -Dtest=StoreServiceTest`
-
+```bash
+mvn test -Dtest=LocationTrackingServiceTest
+mvn test -Dtest=StoreServiceTest
+```
 ## 📁 Proje Yapısı
 
 ```
