@@ -189,5 +189,4 @@ Uygulama aşağıdaki test senaryolarını içerir:
 - 🎯 **Repository Pattern**: CourierEntryRepository ve StoreRepository ile veri erişim katmanının soyutlanması sağlanmıştır.
 
 ### Architectural Patterns
-- 📱 **MVC Pattern**: Controller-Service-Repository katmanları ile uygulama sorumlulukları ayrılmıştır.
 - 🔲 **Layered Architecture**: Presentation (Controller), Business (Service) ve Data (Repository) katmanları ile uygulama modüler bir yapıda tasarlanmıştır.
